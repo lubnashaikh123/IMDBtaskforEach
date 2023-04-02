@@ -1,0 +1,53 @@
+
+
+body{
+    background-color: rgb(4,43,95);
+}
+
+.logo :link,.logo:visited{
+    text-decoration: none;
+    color:white;
+    width: 120px;
+    display: inline-block;
+    
+}
+.logo > img{
+    width: 120px;
+}
+.moviecontainer{
+    height: 500px;
+    margin:0;
+    overflow: hidden;
+    position: relative;
+}
+.heading{
+    position:absolute;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    padding: 10px;
+    background: blueviolet;
+    color:white;
+   } 
+figure.moviecontainer img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.overview{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    background-color: white;
+    padding: 40px;
+    transform: translateY(100%);
+    transition: all .3s ease in ease-in-out;
+}
+
+.moviecontainer:hover .overview,
+.moviecontainer:active .overview,
+.moviecontainer:focus .overview{
+      transform:translateY(0)
+}
